@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "nombre": "Lucas Ramirez",
+    "puesto": "Curador de catálogo",
+    "email": "lucasramirez@levelup.com"
+  },
+  {
+    "id": 2,
+    "nombre": "Lucia Peredo",
+    "puesto": "Gaming specialist",
+    "email": "luciaperedo@levelup.com"
+  },
+  {
+    "id": 3,
+    "nombre": "Pablo Navarro",
+    "puesto": "Atención al cliente",
+    "email": "pablonavarro@levelup.com"
+  }
+]
+

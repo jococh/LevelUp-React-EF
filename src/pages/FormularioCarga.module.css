@@ -1,0 +1,188 @@
+.cargarProducto{
+    min-height:65vh;
+    background:black;
+    color:#b4dd13;
+
+    padding:60px 20px;
+    text-align:center;
+
+    font-family:"Inconsolata", monospace;
+}
+
+.cargarProducto h1{
+    font-size:2.5rem;
+    margin-bottom:30px;
+}
+
+.formulario{
+    max-width:600px;
+    margin:0 auto;
+
+    background:white;
+    color:black;
+
+    padding:35px;
+    border-radius:18px;
+
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+
+    text-align:left;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+.formulario label{
+    font-weight:bold;
+    font-size:1rem;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select{
+    padding:12px;
+    border-radius:8px;
+    border:2px solid #ddd;
+
+    font-family:"Inconsolata", monospace;
+    font-size:1rem;
+
+    transition:.2s;
+}
+
+.formulario input:focus,
+.formulario textarea:focus,
+.formulario select:focus{
+    outline:none;
+    border-color:#b4dd13;
+    box-shadow:0 0 8px rgba(180,221,19,.4);
+}
+
+.formulario textarea{
+    resize:vertical;
+    min-height:120px;
+}
+
+.formulario select{
+    cursor:pointer;
+    background:white;
+}
+
+.checkbox{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    margin-top:8px;
+
+    cursor:pointer;
+}
+
+.checkbox input{
+    width:18px;
+    height:18px;
+
+    accent-color:#b4dd13;
+
+    cursor:pointer;
+}
+
+.formulario button{
+    margin-top:20px;
+
+    background:#b4dd13;
+    color:black;
+
+    border:none;
+    border-radius:10px;
+
+    padding:14px;
+
+    font-family:"Inconsolata", monospace;
+    font-weight:bold;
+    font-size:1rem;
+
+    cursor:pointer;
+    transition:.2s;
+}
+
+.formulario button:hover{
+    background:magenta;
+    color:black;
+}
+
+.preview{
+    margin-top:15px;
+    text-align:center;
+}
+
+.preview p{
+    color:black;
+    margin-bottom:12px;
+    font-weight:bold;
+}
+
+.preview img{
+    width:180px;
+    height:240px;
+    object-fit:cover;
+
+    border-radius:12px;
+    border:3px solid #b4dd13;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.25);
+}
+
+.formulario button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.spinnerBoton {
+  display: inline-block;
+
+  width: 17px;
+  height: 17px;
+
+  margin-right: 10px;
+
+  border: 3px solid rgba(0, 0, 0, 0.25);
+  border-top-color: black;
+  border-radius: 50%;
+
+  vertical-align: middle;
+
+  animation: girar 0.7s linear infinite;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width:768px){
+
+    .cargarProducto{
+        padding:4px 15px;
+    }
+
+    .cargarProducto h1{
+        font-size:2rem;
+    }
+
+    .formulario{
+        padding:25px;
+    }
+
+    .preview img{
+        width:150px;
+        height:200px;
+    }
+
+}

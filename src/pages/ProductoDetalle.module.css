@@ -1,0 +1,244 @@
+.detalle {
+    background: black;
+    color: #b4dd13;
+    min-height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 20px;
+    font-family: "Inconsolata", monospace;
+}
+
+.card {
+    background: white;
+    color: black;
+
+    display: flex;
+    gap: 40px;
+
+    max-width: 850px;
+    width: 100%;
+
+    padding: 35px;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+.imagen {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info h1 {
+    font-size: 2rem;
+}
+
+.info h2 {
+    color: magenta;
+}
+
+.volver {
+    background: #b4dd13;
+    color: black;
+
+    padding: 12px 25px;
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.volver:hover {
+    background: magenta;
+}
+
+.botonCarrito {
+    background: #b4dd13;
+    color: black;
+
+    padding: 12px 25px;
+    border-radius: 10px;
+
+    border: none;
+
+    font-weight: bold;
+    font-family: "Inconsolata", monospace;
+
+    cursor: pointer;
+    width: fit-content;
+}
+
+.botonCarrito:hover {
+    background: magenta;
+}
+
+.contador {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 18px;
+}
+
+.contador button {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+
+    background: #b4dd13;
+    color: black;
+
+    border: none;
+    border-radius: 50%;
+
+    font-family: "Inconsolata", monospace;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.contador button:hover:not(:disabled) {
+    background: magenta;
+
+    transform: scale(1.05);
+}
+
+.contador button:disabled {
+    opacity: 0.45;
+
+    cursor: not-allowed;
+}
+
+.contador span {
+    min-width: 25px;
+
+    color: black;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .detalle {
+        min-height: auto;
+
+        padding: 40px 15px;
+
+        align-items: flex-start;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 380px;
+
+        margin: 0 auto;
+
+        padding: 25px 18px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 25px;
+
+        box-sizing: border-box;
+    }
+
+    .imagen {
+        width: 100%;
+        max-width: 260px;
+
+        height: auto;
+        max-height: 350px;
+
+        object-fit: contain;
+    }
+
+    .info {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 15px;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+    .info h1 {
+        width: 100%;
+
+        margin: 0;
+
+        font-size: 1.8rem;
+        line-height: 1.15;
+
+        overflow-wrap: anywhere;
+    }
+
+    .info h2 {
+        width: 100%;
+
+        margin: 0;
+
+        font-size: 1.5rem;
+
+        overflow-wrap: anywhere;
+    }
+
+    .info p {
+        width: 100%;
+
+        margin: 0;
+
+        font-size: 1rem;
+        line-height: 1.4;
+
+        overflow-wrap: anywhere;
+    }
+
+    .botonCarrito,
+    .volver {
+        width: 100%;
+        max-width: 250px;
+
+        padding: 12px 15px;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+    .contador {
+    justify-content: center;
+
+    width: 100%;
+}
+}

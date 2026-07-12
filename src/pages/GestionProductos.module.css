@@ -1,0 +1,122 @@
+.gestion {
+    min-height: 100vh;
+    background: black;
+    color: #b4dd13;
+    padding: 50px 30px;
+    font-family: "Inconsolata", monospace;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin: 80px 0 40px;
+}
+
+.listaProductos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 320px));
+    justify-content: center;
+    gap: 30px;
+}
+
+.cardProducto {
+    background: white;
+    color: black;
+
+    border-radius: 18px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.35);
+    transition: all .25s ease;
+}
+
+.cardProducto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(180,221,19,.25);
+}
+
+.imagen {
+    display: block;
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+
+    margin: 0 auto 18px;
+}
+
+.cardProducto h3 {
+    text-align: center;
+    font-size: 1.35rem;
+    margin-bottom: 18px;
+}
+
+.cardProducto p {
+    margin: 7px 0;
+    line-height: 1.4;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.botones button {
+    flex: 1;
+    height: 44px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: "Inconsolata", monospace;
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.editar {
+    background: #b4dd13;
+    color: black;
+}
+
+.editar:hover {
+    background: magenta;
+    color: black;
+}
+
+.eliminar {
+    background: #d62828;
+    color: white;
+}
+
+.eliminar:hover {
+    background: #9d1f1f;
+}
+
+@media (max-width:768px){
+
+    .gestion{
+        padding:35px 15px;
+    }
+
+    .titulo{
+        font-size:1.8rem;
+        margin:60px 0 30px;
+    }
+
+    .listaProductos{
+        grid-template-columns:1fr;
+    }
+
+    .botones{
+        flex-direction:column;
+    }
+
+}

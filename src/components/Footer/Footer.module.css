@@ -1,0 +1,194 @@
+.footer{
+    background:#b4dd13;
+    color:black;
+
+    padding:38px 40px 18px;
+
+    font-family:"Inconsolata", monospace;
+}
+
+.contenedor{
+    max-width:1250px;
+    margin:0 auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:60px;
+}
+
+.infoEmpresa{
+    width:38%;
+    text-align:left;
+}
+
+.infoEmpresa h2{
+    font-family:"Micro 5", sans-serif;
+    font-size:3.2rem;
+    margin-bottom:18px;
+}
+
+.infoEmpresa p{
+    max-width:520px;
+    font-size:1rem;
+    line-height:1.7;
+}
+
+.equipo{
+    width:62%;
+
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    text-align:right;
+}
+
+.equipo h3{
+    font-size:1.25rem;
+    margin-bottom:18px;
+}
+
+.cards{
+    display:flex;
+    justify-content:flex-end;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:155px;
+    min-height:115px;
+
+    background:black;
+    color:#b4dd13;
+
+    border-radius:14px;
+    padding:16px 12px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+}
+
+.card h4{
+    font-size:.95rem;
+    line-height:1.2;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:magenta;
+    font-size:.78rem;
+    font-weight:bold;
+    line-height:1.2;
+}
+
+.card small{
+    color:white;
+    font-size:.7rem;
+    margin-top:8px;
+    line-height:1.2;
+}
+
+.linea{
+    max-width:1250px;
+    height:1px;
+    background:black;
+
+    margin:34px auto 14px;
+}
+
+.copy{
+    text-align:center;
+    font-size:.85rem;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 35px 20px 18px;
+  }
+
+  .contenedor {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 40px;
+  }
+
+  .infoEmpresa {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .infoEmpresa h2 {
+    margin: 0 0 15px;
+
+    font-size: 3rem;
+  }
+
+  .infoEmpresa p {
+    width: 100%;
+    max-width: 500px;
+
+    margin: 0 auto;
+
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .equipo {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .equipo h3 {
+    margin: 0 0 20px;
+
+    font-size: 1.25rem;
+  }
+
+  .cards {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 280px;
+    min-height: 110px;
+
+    box-sizing: border-box;
+  }
+
+  .linea {
+    width: 100%;
+
+    margin: 35px auto 15px;
+  }
+
+  .copy {
+    margin: 0;
+
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+}

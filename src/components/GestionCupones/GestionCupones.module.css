@@ -1,0 +1,236 @@
+.gestion {
+  min-height: 100vh;
+
+  padding: 50px 30px;
+
+  background: black;
+  color: #b4dd13;
+
+  font-family: "Inconsolata", monospace;
+}
+
+.contenedorFormulario {
+  width: 100%;
+  max-width: 650px;
+
+  margin: 0 auto 60px;
+  padding: 30px;
+
+  background: white;
+  color: black;
+
+  border-radius: 16px;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 6px 18px
+    rgba(180, 221, 19, 0.25);
+}
+
+.contenedorFormulario h1 {
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  text-align: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.formulario label {
+  font-weight: bold;
+}
+
+.formulario input {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #bcbcbc;
+  border-radius: 8px;
+
+  box-sizing: border-box;
+
+  font-family: "Inconsolata", monospace;
+  font-size: 1rem;
+}
+
+.formulario input:focus {
+  border-color: #b4dd13;
+
+  outline: 2px solid #b4dd13;
+}
+
+.botonesFormulario {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 15px;
+}
+
+.botonGuardar,
+.botonCancelar {
+  flex: 1;
+
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  font-family: "Inconsolata", monospace;
+  font-size: 1rem;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.botonGuardar {
+  background: #b4dd13;
+  color: black;
+}
+
+.botonGuardar:hover {
+  background: magenta;
+}
+
+.botonCancelar {
+  background: #d8d8d8;
+  color: black;
+}
+
+.botonCancelar:hover {
+  background: #bcbcbc;
+}
+
+.botonGuardar:disabled,
+.botonCancelar:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+.tituloLista {
+  margin-bottom: 30px;
+
+  text-align: center;
+
+  font-size: 2rem;
+}
+
+.listaCupones {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(240px, 300px)
+    );
+
+  justify-content: center;
+
+  gap: 25px;
+}
+
+.cardCupon {
+  padding: 22px;
+
+  background: white;
+  color: black;
+
+  border-radius: 14px;
+
+  box-shadow: 0 6px 15px
+    rgba(0, 0, 0, 0.25);
+}
+
+.codigo {
+  margin-top: 0;
+
+  color: #718800;
+
+  font-size: 1.4rem;
+
+  overflow-wrap: anywhere;
+}
+
+.descuento {
+  font-size: 1.1rem;
+}
+
+.botonesCard {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.botonEditar,
+.botonEliminar {
+  flex: 1;
+
+  padding: 10px;
+
+  border: none;
+  border-radius: 8px;
+
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.botonEditar {
+  background: #b4dd13;
+  color: black;
+}
+
+.botonEditar:hover {
+  background: magenta;
+}
+
+.botonEliminar {
+  background: #d62828;
+  color: white;
+}
+
+.botonEliminar:hover {
+  background: #9d1f1f;
+}
+
+.estado {
+  margin: 30px 0;
+
+  text-align: center;
+}
+
+.error {
+  color: magenta;
+}
+
+@media (max-width: 600px) {
+  .gestion {
+    padding: 35px 15px;
+  }
+
+  .contenedorFormulario {
+    padding: 25px 20px;
+  }
+
+  .botonesFormulario {
+    flex-direction: column;
+  }
+
+  .listaCupones {
+    grid-template-columns: 1fr;
+  }
+}

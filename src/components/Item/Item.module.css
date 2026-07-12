@@ -1,0 +1,195 @@
+.card{
+    position:relative;
+
+    background:white;
+    color:black;
+    border-radius:14px;
+    padding:22px;
+    width:280px;
+    min-height:360px;
+    text-align:center;
+    font-family:"Inconsolata", monospace;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.favorito{
+    position:absolute;
+    top:12px;
+    right:12px;
+    z-index:10;
+
+    width:38px;
+    height:38px;
+
+    background:black;
+    color:#b4dd13;
+
+    border:2px solid #b4dd13;
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:1.5rem;
+    line-height:1;
+    cursor:pointer;
+}
+
+.favorito:hover{
+    border-color:magenta;
+    color:magenta;
+}
+
+.imagen{
+    width:100%;
+    height:170px;
+    object-fit:contain;
+}
+
+.precio{
+    font-weight:bold;
+    margin:10px 0;
+    font-size:1.1rem;
+}
+
+.card a{
+    background:#b4dd13;
+    color:black;
+    padding:10px 18px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+.card a:hover{
+    background:magenta;
+}
+
+.contador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.contador button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background: #b4dd13;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contador button:hover {
+    background: magenta;
+}
+
+.contador span {
+    min-width: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.botonCarrito {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+
+    background: black;
+    color: #b4dd13;
+
+    border: 2px solid #b4dd13;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botonCarrito:hover {
+    background: #b4dd13;
+    color: black;
+}
+
+.cantidadCarrito {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+
+    .card {
+        width: calc(100% - 30px);
+        max-width: 320px;
+        min-height: auto;
+
+        padding: 20px 15px;
+
+        box-sizing: border-box;
+    }
+
+    .imagen {
+        width: 100%;
+        height: 190px;
+
+        object-fit: contain;
+    }
+
+    .card h2 {
+        margin: 12px 0 8px;
+
+        font-size: 1.3rem;
+        line-height: 1.2;
+
+        overflow-wrap: anywhere;
+    }
+
+    .card p {
+        max-width: 100%;
+
+        line-height: 1.3;
+
+        overflow-wrap: anywhere;
+    }
+
+    .precio {
+        margin: 10px 0;
+
+        font-size: 1.1rem;
+    }
+
+    .contador {
+        margin: 12px 0;
+
+        gap: 15px;
+    }
+
+    .botonCarrito {
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+    .cantidadCarrito {
+        margin-bottom: 0;
+    }
+}

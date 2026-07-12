@@ -1,0 +1,68 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+    background-color:black;
+    min-height:100vh;
+    font-family:"Inconsolata", monospace;
+}
+
+a{
+text-decoration:none;
+}
+
+ul{
+list-style:none;
+}
+
+.productos {
+  width: 100%;
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 280px);
+
+  justify-content: center;
+
+  gap: 30px;
+
+  padding: 40px 20px;
+
+  box-sizing: border-box;
+}
+
+.home{
+    color:#b4dd13;
+    text-align:center;
+    padding:80px 20px 40px;
+    font-family:"Inconsolata", monospace;
+}
+
+.home h1{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.home p{
+    font-size:1.2rem;
+    max-width:600px;
+    margin:0 auto;
+}
+
+@media (max-width: 768px) {
+  .productos {
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+
+    gap: 28px;
+
+    padding: 35px 15px;
+  }
+}

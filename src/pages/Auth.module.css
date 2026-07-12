@@ -1,0 +1,146 @@
+.authPagina {
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 20px;
+
+    background: black;
+
+    font-family: "Inconsolata", monospace;
+}
+
+.authCard {
+    width: 100%;
+    max-width: 450px;
+
+    padding: 35px;
+
+    background: white;
+    color: black;
+
+    border-radius: 16px;
+
+    box-shadow: 0 6px 18px rgba(180, 221, 19, 0.25);
+}
+
+.authCard h1 {
+    margin: 0 0 25px;
+
+    color: black;
+
+    font-size: 2rem;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.formulario label {
+    font-weight: bold;
+}
+
+.formulario input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #bcbcbc;
+    border-radius: 8px;
+
+    font-family: "Inconsolata", monospace;
+    font-size: 1rem;
+
+    box-sizing: border-box;
+}
+
+.formulario input:focus {
+    border-color: #b4dd13;
+
+    outline: 2px solid #b4dd13;
+}
+
+.boton {
+    margin-top: 12px;
+
+    padding: 13px 20px;
+
+    background: #b4dd13;
+    color: black;
+
+    border: none;
+    border-radius: 9px;
+
+    font-family: "Inconsolata", monospace;
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.boton:hover {
+    background: magenta;
+}
+
+.enlace {
+    margin: 20px 0 0;
+
+    text-align: center;
+}
+
+.enlace a {
+    color: #7a9500;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.enlace a:hover {
+    color: magenta;
+
+    text-decoration: underline;
+}
+
+.datosPerfil {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+.datosPerfil p {
+    margin: 0;
+
+    padding: 12px;
+
+    background: #f2f2f2;
+
+    border-left: 5px solid #b4dd13;
+    border-radius: 6px;
+
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    .authPagina {
+        padding: 35px 15px;
+    }
+
+    .authCard {
+        padding: 25px 20px;
+    }
+
+    .authCard h1 {
+        font-size: 1.7rem;
+    }
+}

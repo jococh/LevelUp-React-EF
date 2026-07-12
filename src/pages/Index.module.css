@@ -1,0 +1,177 @@
+.hero {
+  min-height: 350px;
+
+  background: black;
+  color: #b4dd13;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 45px 20px;
+
+  font-family: "Inconsolata", monospace;
+}
+
+.hero h1 {
+  font-size: 2.7rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 650px;
+
+  margin-bottom: 28px;
+
+  font-size: 1.2rem;
+}
+
+.boton{
+    background:#b4dd13;
+    color:black;
+
+    padding:14px 35px;
+    border-radius:12px;
+
+    font-size:1.2rem;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.boton:hover{
+    background:magenta;
+}
+
+.populares {
+  background: black;
+  color: #b4dd13;
+
+  text-align: center;
+
+  padding: 15px 20px 70px;
+}
+
+.populares h2{
+    margin-bottom:30px;
+}
+
+.popularesContainer{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.popularCard{
+    width:260px;
+
+    background:white;
+    color:black;
+
+    border-radius:15px;
+    overflow:hidden;
+
+    text-align:center;
+    text-decoration:none;
+
+    font-family:"Inconsolata", monospace;
+
+    border:2px solid transparent;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.popularCard:hover{
+    border-color:magenta;
+}
+
+.popularCard img{
+    width:100%;
+    aspect-ratio:2 / 3;
+    object-fit:cover;
+    display:block;
+}
+
+.popularCard h3{
+    padding:18px 12px;
+    font-size:1.1rem;
+}
+/* RESPONSIVE */
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+
+    padding: 55px 20px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .hero h1 {
+    margin: 0 0 16px;
+
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    width: 100%;
+    max-width: 330px;
+
+    margin: 0 0 25px;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .boton {
+    margin: 0;
+
+    padding: 12px 28px;
+
+    font-size: 1rem;
+  }
+
+  .populares {
+    padding: 35px 20px 55px;
+  }
+
+  .populares h2 {
+    margin: 0 0 25px;
+
+    font-size: 1.45rem;
+
+    text-align: center;
+  }
+
+  .popularesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 25px;
+  }
+
+  .popularCard {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .popularCard h3 {
+    padding: 15px 10px;
+
+    font-size: 1rem;
+  }
+}

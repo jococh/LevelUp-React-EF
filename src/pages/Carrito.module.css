@@ -1,0 +1,411 @@
+.carrito,
+.carritoVacio{
+    min-height:65vh;
+    background:black;
+    color:#b4dd13;
+    padding:50px 40px;
+    font-family:"Inconsolata", monospace;
+}
+
+.carrito h1{
+    font-size:2.3rem;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+.breadcrumb{
+    display:flex;
+    gap:8px;
+    align-items:center;
+    margin-bottom:10px;
+}
+
+.breadcrumb a{
+    background:#b4dd13;
+    color:black;
+    padding:4px 12px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.breadcrumb p,
+.breadcrumb span{
+    color:white;
+}
+
+.contenedor{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.tabla{
+    background:white;
+    color:black;
+    border-radius:16px;
+    overflow:hidden;
+
+    max-width:1100px;
+    width:100%;
+
+    margin:0 auto;
+}
+
+.encabezado,
+.fila{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr 1fr 70px;
+    align-items: center;
+    padding: 22px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.encabezado{
+    font-weight:bold;
+    background:#f4f4f4;
+}
+
+.producto{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    text-align:left;
+}
+
+.producto img{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+}
+
+.producto h2{
+    font-size:1rem;
+    margin-bottom:5px;
+}
+
+.producto p{
+    color:#555;
+}
+
+.acciones{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    padding:25px;
+}
+
+.boton,
+.botonSecundario,
+.botonVaciar,
+.botonPago{
+    border:none;
+    border-radius:10px;
+    padding:12px 22px;
+    font-family:"Inconsolata", monospace;
+    font-weight:bold;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.boton,
+.botonSecundario{
+    background:#b4dd13;
+    color:black;
+}
+
+.botonVaciar{
+    background:black;
+    color:#b4dd13;
+}
+
+.botonPago{
+    width:100%;
+    background:black;
+    color:#b4dd13;
+    margin-top:25px;
+    text-transform:uppercase;
+}
+
+.boton:hover,
+.botonSecundario:hover,
+.botonVaciar:hover,
+.botonPago:hover{
+    background:magenta;
+    color:black;
+}
+
+.resumen{
+    max-width:520px;
+    width:100%;
+    margin:0 auto;
+}
+
+.totalBox{
+    background:white;
+    color:black;
+    border-radius:16px;
+    padding:28px;
+}
+
+.totalLinea{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:1.5rem;
+}
+
+
+.carritoVacio{
+    text-align:center;
+}
+
+.carritoVacio p{
+    color:white;
+    margin-bottom:25px;
+}
+
+.botonEliminar{
+    justify-self: center;
+    align-self: center;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;
+    border: 2px solid #d62828;
+    border-radius: 50%;
+
+    color: #d62828;
+    font-size: 1.2rem;
+
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* FORMULARIO DE CUPONES */
+
+.formularioCupon {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin: 20px 0;
+  padding: 18px;
+
+  background: #f2f2f2;
+
+  border-radius: 10px;
+}
+
+.formularioCupon label {
+  color: black;
+
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+}
+
+.cuponControles {
+  display: flex;
+  gap: 8px;
+}
+
+.cuponControles input {
+  min-width: 0;
+  flex: 1;
+
+  padding: 10px;
+
+  border: 1px solid #bcbcbc;
+  border-radius: 7px;
+
+  font-family: "Inconsolata", monospace;
+  font-size: 0.95rem;
+
+  text-transform: uppercase;
+}
+
+.cuponControles input:focus {
+  border-color: #b4dd13;
+
+  outline: 2px solid #b4dd13;
+}
+
+.cuponControles button {
+  padding: 10px 14px;
+
+  background: #b4dd13;
+  color: black;
+
+  border: none;
+  border-radius: 7px;
+
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.cuponControles button:hover:not(:disabled) {
+  background: magenta;
+}
+
+.cuponControles button:disabled {
+  opacity: 0.65;
+
+  cursor: not-allowed;
+}
+
+/* CUPÓN APLICADO */
+
+.cuponAplicado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+  padding: 12px;
+
+  background: rgba(180, 221, 19, 0.2);
+
+  border: 2px solid #b4dd13;
+  border-radius: 8px;
+}
+
+.cuponAplicado p {
+  margin: 0;
+
+  color: black;
+
+  font-size: 0.95rem;
+}
+
+.cuponAplicado button {
+  padding: 7px 10px;
+
+  background: #d62828;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.cuponAplicado button:hover {
+  background: #9d1f1f;
+}
+
+/* RESPONSIVE PARA CUPONES */
+
+@media (max-width: 600px) {
+  .cuponControles {
+    flex-direction: column;
+  }
+
+  .cuponControles button {
+    width: 100%;
+  }
+
+  .cuponAplicado {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cuponAplicado p {
+    text-align: center;
+  }
+
+  .cuponAplicado button {
+    width: 100%;
+  }
+}
+
+/* CONTROLES DE CANTIDAD */
+
+.controlCantidad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.controlCantidad button {
+  width: 32px;
+  height: 32px;
+
+  padding: 0;
+
+  background: #b4dd13;
+  color: black;
+
+  border: none;
+  border-radius: 6px;
+
+  font-family: "Inconsolata", monospace;
+  font-size: 1.3rem;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.controlCantidad button:hover:not(:disabled) {
+  background: magenta;
+}
+
+.controlCantidad button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.controlCantidad span {
+  min-width: 25px;
+
+  color: black;
+
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media(max-width:900px){
+    .contenedor{
+        grid-template-columns:1fr;
+    }
+
+    .encabezado{
+        display:none;
+    }
+
+    .fila{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    .producto{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .acciones{
+        flex-direction:column;
+    }
+}
+

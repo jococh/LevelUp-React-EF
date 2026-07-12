@@ -1,0 +1,229 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 30px;
+
+    background: black;
+
+    font-family: "Inconsolata", monospace;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.logoContenedor {
+    width: 105px;
+    height: 105px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+}
+
+.logo {
+    width: 210px;
+    height: 210px;
+
+    max-width: none;
+
+    object-fit: contain;
+
+    transform: scale(1.15);
+}
+
+.marca p {
+    margin: 0;
+
+    color: #b4dd13;
+
+    font-family: "Micro 5", monospace;
+    font-size: 5rem;
+
+    line-height: 1;
+}
+
+/* Contenedor del usuario */
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.usuario span {
+    color: white;
+    font-size: 1rem;
+}
+
+/* Botón para iniciar sesión */
+
+.botonLogin {
+    display: inline-block;
+
+    padding: 10px 16px;
+
+    background: #b4dd13;
+    color: black;
+
+    border-radius: 8px;
+
+    font-family: "Inconsolata", monospace;
+    font-size: 1rem;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.botonLogin:hover {
+    background: magenta;
+    color: black;
+}
+
+/* Botón para cerrar sesión */
+
+.botonCerrarSesion {
+    padding: 10px 16px;
+
+    background: #b4dd13;
+    color: black;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: "Inconsolata", monospace;
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.botonCerrarSesion:hover {
+    background: magenta;
+}
+
+/* Estilo anterior del carrito */
+
+.carrito {
+    padding: 10px;
+
+    background: #b4dd13;
+    color: black;
+
+    border-radius: 8px;
+
+    font-size: 25px;
+}
+
+.botonPerfil {
+    display: inline-block;
+
+    padding: 10px 16px;
+
+    background: white;
+    color: black;
+
+    border-radius: 8px;
+
+    font-family: "Inconsolata", monospace;
+    font-size: 1rem;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.botonPerfil:hover {
+    background: magenta;
+    color: black;
+}
+
+/*responsive */
+
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 12px;
+
+        padding: 15px;
+    }
+
+    .marca {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+
+        gap: 5px;
+    }
+
+    .logoContenedor {
+        width: 65px;
+        height: 65px;
+
+        flex-shrink: 0;
+    }
+
+    .logo {
+        width: 130px;
+        height: 130px;
+
+        max-width: none;
+    }
+
+    .marca p {
+        margin: 0;
+
+        font-size: 3.8rem;
+        line-height: 1;
+
+        white-space: nowrap;
+    }
+
+    .usuario {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        width: 100%;
+        max-width: 330px;
+
+        gap: 10px;
+    }
+
+    .usuario span {
+        flex-basis: 100%;
+
+        margin: 0;
+
+        text-align: center;
+
+        overflow-wrap: anywhere;
+    }
+
+    .usuario a,
+    .usuario button {
+        width: auto;
+
+        padding: 10px 14px;
+    }
+}

@@ -1,0 +1,47 @@
+.estado {
+  min-height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+
+  background: black;
+  color: #b4dd13;
+
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+}
+
+.estado h2 {
+  margin: 0;
+
+  font-size: 1.7rem;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+
+  border: 6px solid rgba(180, 221, 19, 0.25);
+  border-top-color: #b4dd13;
+  border-radius: 50%;
+
+  animation: girar 0.8s linear infinite;
+}
+
+.error {
+  color: magenta;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
