@@ -1,16 +1,67 @@
-# React + Vite
+# 🎮 Level Up
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Level Up es una tienda online de videojuegos desarrollada con React y Firebase.
 
-Currently, two official plugins are available:
+La aplicación permite ver productos, consultar sus detalles, agregarlos al carrito y aplicar cupones de descuento. También cuenta con registro e inicio de sesión y un panel de administración para gestionar los productos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades
 
-## React Compiler
+- Catálogo de videojuegos.
+- Detalle de productos.
+- Carrito de compras.
+- Control de cantidades y stock.
+- Cupones de descuento.
+- Registro e inicio de sesión.
+- Perfil de usuario.
+- Rutas protegidas.
+- Creación, edición y eliminación de productos.
+- Productos destacados.
+- Diseño responsive.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- React
+- JavaScript
+- Vite
+- React Router
+- Context API
+- Firebase Authentication
+- Firebase Firestore
+- CSS Modules
+- ImgBB
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Instalación
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/jococh/LevelUp-React-EF
+```
+
+2. Ingresar a la carpeta del proyecto:
+
+```bash
+cd level-up-entrega-final
+```
+
+3. Instalar las dependencias:
+
+```bash
+npm install
+```
+
+4. Ejecutar el proyecto:
+
+```bash
+npm run dev
+```
+
+## Administración
+
+El acceso al panel de administración está protegido mediante Firebase Authentication.
+
+Las credenciales de prueba se entregan junto con el enlace del proyecto.
+
+## Autor
+
+**Joaquín Leguizamón**
