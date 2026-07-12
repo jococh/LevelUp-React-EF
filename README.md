@@ -1,4 +1,4 @@
-# 🎮 Level Up
+#  Level Up
 
 Level Up es una tienda online de videojuegos desarrollada con React y Firebase.
 
